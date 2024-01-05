@@ -1,0 +1,91 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Graduate&family=Piazzolla:ital,opsz,wght@1,8..30,200&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Graduate', serif;
+}
+html{
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
+    color: white;
+}
+
+body{
+    background: linear-gradient(rgba(17,17,17,0.5),rgba(20,20,20,1)),url(img/academia.jpg );
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header{
+    width: 100%;
+    height: 20%;
+}
+.menu {
+    text-align: right;
+    padding-right: 20px;
+
+}
+.menu a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+.menu a:hover{
+    text-decoration:overline #1AF938; 
+    
+}
+header h1{
+    text-align: left;
+    padding: 40px 0px 0px 70px;  
+    font-size: 2.5em;
+    background: linear-gradient(45deg,#1AF938,white,black);
+    background-size: 400% 100%;
+    animation: degrade 15s linear infinite alternate;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@keyframes degrade {
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+.principal{
+    text-transform: uppercase;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding-top: 200px;
+}
+.principal h1,h2{
+    padding-bottom: 50px;
+    font-size: 2.5em;
+}
+.principal button.inscreva{
+    padding: 15px 45px;
+    margin: 30px;
+    border-radius: 13px;
+    border-color:white;
+    animation: animab;
+    
+
+}
+.principal button.personal{
+    padding: 15px 45px;
+    margin: 20px;
+    border-radius: 13px;
+    border-color:white;
+}
+.principal button:hover{
+   background-color:#1AF938;
+    border-color: #1AF938;
+}
+.menu li{
+    color: white;
+}
